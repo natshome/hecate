@@ -1,0 +1,585 @@
+<html>
+  <head>
+    
+    <title>links away from home</title>
+    <link rel="shortcut icon" type="image/png" href="images/ico.png">
+    <meta name="viewport" content="width=device-width, initial-scale=0.9">
+    <link rel="icon" href="-assets/images/ico.png">
+    
+    <style>
+      
+      @font-face {
+        font-family: avenir;
+        src: url(-assets/fonts/avenir.otf);
+      }
+      
+      @font-face {
+        font-family: futura-heavy;
+        src: url(-assets/fonts/futura/futura_heavy.ttf);
+      }
+
+      @font-face {
+        font-family: futura-heavy-italic;
+        src: url(-assets/fonts/futura/futura_heavy_italic.ttf);
+      }
+      
+      @font-face {
+        font-family: consolas-bold;
+        src: url(-assets/fonts/consolas/consolas_bold.ttf);
+      }
+      
+      @font-face {
+        font-family: consolas-bold-italic;
+        src: url(-assets/fonts/consolas/consolas_bold-italic.ttf);
+      }
+      
+      @font-face {
+        font-family: montserrat-bold;
+        src: url(-assets/fonts/montserrat/montserrat_bold.otf);
+      }
+      
+      @font-face {
+        font-family: montserrat-bold-italic;
+        src: url(-assets/fonts/montserrat/montserrat_bold-italic.otf);
+      }
+      
+      @font-face {
+        font-family: montserrat-medium;
+        src: url(-assets/fonts/montserrat/montserrat_medium.otf);
+      }
+      
+      @font-face {
+        font-family: montserrat-medium-italic;
+        src: url(-assets/fonts/montserrat/montserrat_medium-italic.otf);
+      }
+      
+      ::selection {
+        background-color: rgba(244,173,231,0.5);
+      }
+
+      html {
+        cursor: url("https://downloads.totallyfreecursors.com/cursor_files/sparklepink.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/sparklepink.gif"), auto;
+      }
+
+      a:hover, button {
+        cursor: url("https://downloads.totallyfreecursors.com/cursor_files/heart-ani-multi.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/heart-ani-multi.gif"), auto;
+      }
+
+      body {
+        background-color: #faf6f3;
+        background: url(-assets/images/about/36.jpg) #000;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 100vh;
+        margin: 0 auto;
+        user-select: none;
+        width: 100vw;
+        background-attachment: fixed;
+      }
+      
+      hr {
+        color: #fff;
+        width: 65%;
+      }
+      
+      a {
+        color: inherit;
+        text-decoration: none;
+      }
+      
+      .outer {
+        display: table;
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+      }
+
+      .top {
+        display: block;
+        margin-top: 48px;
+      }
+      
+      .middle {
+        display: block;
+        margin-top: -20px;
+        margin-bottom: 50px;
+      }
+      
+      .inner {
+        background-color: rgba(50, 50, 50, 0.5);
+        border: 3px solid #fff;
+        font-family: montserrat_bold;
+        margin-left: auto;
+        margin-right: auto;
+        max-width: 340px;
+        overflow: auto;
+        padding: 16px;
+        text-align: center;
+        width: 85%;
+      }
+
+      .top .inner img {
+        border: 2px #ffeedd dashed;
+        float: left;
+        margin-right: 12px;
+        margin-top: 3px;
+        padding: 4px;
+        width: 33%;
+      }
+
+      .biography {
+        color: #ffeedd;
+        font-family: montserrat-bold;
+        font-size: 0.9rem;
+        margin-top: 8px;
+        text-align: left;
+      }
+
+      .biography .hi {
+        font-size: 2rem;
+        margin-bottom: 0px;
+        margin-top: 12px;
+      }
+
+      .biography .hi .emoticon {
+        font-family: futura-heavy;
+      }
+
+      .biography img {
+        border: 0px !important;
+        margin-top: 7px !important;
+      }
+
+      .biography .line {
+        margin: -7px 0 6px 0;
+        padding: 0;
+      }
+
+      .biography p {
+        padding: 0;
+        margin: 0;
+        padding-bottom: 12px;
+      }
+
+      .end {
+        padding-bottom: 0px !important;
+      }
+      
+      .innertext {
+        color: #fff;
+      }
+      
+      .email {
+        font-size: 1.76em;
+        font-family: montserrat-bold-italic;
+        padding-top: 3px;
+        margin-bottom: 10px;
+        background: rgba(255, 255, 255, 0.34);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 2px -2px 0 #ffeedd;
+        margin-top: 34px;
+      }
+
+      .email:hover {
+        text-shadow: 0px 0px 0 #ffeedd;
+      }
+      
+      .crown {
+        height: 34px;
+        position: relative;
+        bottom: 78px;
+        right: 0px;
+        transform: rotate(-6deg);
+        margin-bottom: -96px;
+        filter: sepia(85%) !important;
+      }
+
+      .alllinks {
+        background-color: rgba(255, 255, 255, 0.1);
+        border: 1px dashed #bbb;
+        margin: 0 auto;
+        padding: 16px 16px 12px 16px;
+        width: fit-content;
+      }
+      
+      .otherlinks {
+        color: #fee;
+        margin-left: auto;
+        margin-right: auto;
+        font-family: montserrat-medium;
+        font-size: 15px;
+        text-align: center;
+      }
+      
+      td {
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 2px;
+      }
+      
+      .ind_links {
+        font-size: 17px;
+        font-family: montserrat-bold;
+        padding: 3px 5px;
+      }
+
+      .slasher {
+        color: rgba(255, 238, 238, 0.6);
+        font-family: montserrat-bold;
+        margin: 0;
+        padding: 2px 2px 0;
+      }
+
+      #aoty:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, #444 0%, black 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #bandcamp:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(103,179,217,1) 0%, rgba(82,189,140,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #bearblog:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(199,108,116,1) 0%, rgba(181,165,168,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #discord:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(226,142,194,1) 0%, rgba(116,41,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #goodreads:hover {
+        text-decoration: none;
+        background: #c7a77b;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #instagram:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(255,253,89,1) 0%, rgba(255,155,56,1) 22%, rgba(232,120,155,1) 68%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #id3:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(210,217,103,1) 0%, rgba(82,189,140,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #lemmy:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(210,217,103,1) 0%, rgba(82,189,140,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #letterboxd:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(255,128,0,1) 15%, rgba(0,224,84,1) 50%, rgba(64,188,244,1) 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #mastodon:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(100,144,242,1) 0%, rgba(79,185,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #reddit:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(228,205,182,1) 0%, rgba(255,163,84,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #rym:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(128,163,255,1) 0%, rgba(0,81,255,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #serializd:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, #28a745 0%, #20c997 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #snapchat:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(255,188,0,1) 0%, rgba(255,200,200,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #soundcloud:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(255,188,0,1) 0%, rgba(255,200,200,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #spotify:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(99,199,75,1) 0%, rgba(91,223,129,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #steam:hover {
+        text-decoration: none;
+        background: #6490f2;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #tumblr:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(87,0,255,1) 15%, rgba(64,188,244,1) 85%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #twitch:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(184,182,228,1) 0%, rgba(91,60,242,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #twitter:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(182,227,228,1) 0%, rgba(48,201,218,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #vsco:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(212,192,192,1) 0%, rgba(198,159,142,1) 80%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      #youtube:hover {
+        text-decoration: none;
+        background: linear-gradient(90deg, rgba(228,205,182,1) 0%, rgba(255,84,84,1) 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        text-shadow: 1.5px -1.5px 0 #fff;
+      }
+
+      .boldlinks {
+        font-family: montserrat-bold-italic;
+        font-size: 22px;
+        padding: 0px 0px 8px 0px;
+      }
+
+      .boldlinks_sub {
+        padding: 2px 22px 3px;
+        background-color: rgba(0, 0, 0, 0.2);
+      }
+
+      .top .minititle {
+        margin-right: 235px;
+      }
+
+      .minititle {
+        font-family: montserrat-bold-italic;
+        font-size: 18px;
+        color: #fff;
+        position: relative;
+        bottom: -23px;
+        width: auto;
+        text-align: center;
+        margin-right: 114px;
+      }
+
+      .minititleunder {
+        font-family: montserrat-bold-italic;
+        font-size: 18px;
+        color: #fff;
+        position: relative;
+        top: -23px;
+        width: auto;
+        text-align: center;
+        margin-left: 117px;
+      }
+
+      .backbutton {
+        font-family: montserrat-bold;
+        font-size: 13px;
+        position: fixed;
+        color: #fff;
+        padding: 8px;
+        border: dashed #fff 1px;
+        margin: 14px;
+        background-color: rgba(50, 50, 50, 0.5);
+      }
+
+      .backbutton:hover {
+        text-decoration: underline;
+      }
+
+      .secondbutton {
+        font-family: montserrat-bold;
+        font-size: 16px;
+        position: fixed;
+        right: 0;
+        color: #fff;
+        padding: 8px;
+        border: dashed #fff 1px;
+        margin: 8px;
+        background-color: rgba(50, 50, 50, 0.5);
+      }
+
+      .secondbutton:hover {
+        text-decoration: underline;
+      }
+      
+    </style>
+    
+    <script>
+      
+      function changeText(text) {
+        document.getElementById('chgtext').innerHTML = text;
+      }
+
+      function changeText2(text2) {
+        document.getElementById('textchg').innerHTML = text2;
+      }
+
+      function changeText3(text3) {
+        document.getElementById('megatext').innerHTML = text3;
+      }
+
+      function changeText4(text4) {
+        document.getElementById('minitext').innerHTML = text4;
+      }
+
+    </script>
+    
+  </head>
+
+  <body>
+    
+    <div class="outer">
+
+      <div>
+        <a class="backbutton" href="index.html">☚ back home</a>
+        <!--<a class="secondbutton" href="https://pitaparrot.com">go to pitaparrot ☛</a>-->
+      </div>
+
+      <div class="top">
+        <div class="minititle">
+          <p>about here</p>
+        </div>
+        <div class="inner">
+          <img src="-assets/images/about/hdrx.jpg">
+          <div class="biography">
+            <!--<p class="hi">⁂</p>-->
+            <img class="sig" src="-assets/images/about/signature.png" />
+            <p class="line">——————————————</p>
+            <p>this is my online place for everything i make and publish; writing is the majority of it, but there's some videos & music as well from time to time. i hope you love subjectivity, it's everywhere ⁂</p>
+            <p>i'm real, and so are you <3</p>
+            <p class="end">⟟ cincinnati</p>
+          </div>
+        </div>
+        <div class="minititleunder">
+          <p>x- natalie elysia cassarà</p>
+        </div>
+      </div>
+
+      <div class="middle">
+        <div class="minititle">
+          <p>contact&nbsp;&&nbsp;external&nbsp;links</p>
+        </div>
+        <div class="inner">
+          <div class="innertext">
+            <div class="email" id="chgtext">
+              <a href="#" id="mail" onclick="document.getElementById('chgtext')/*.style.fontSize = '1.38em'*/;changeText('me@nat-ho.me');">direct delivery</a>
+            </div>
+            <img src="-assets/gif/loveletter.gif" class="crown">
+            <div class="alllinks">
+              <table class="otherlinks">
+                <tr>
+                  <td class="ind_links" id="id3"><a href="id3.html">id:3</a></td>
+                  <td class="slasher">/</td>
+                  <td class="ind_links" id="bandcamp"><a href="https://ceicafera.bandcamp.com" target="_blank">bandcamp</a></td>
+                  <td class="slasher">/</td>
+                  <td class="ind_links" id="youtube"><a href="https://www.youtube.com/@natxli3" target="_blank">videos</a></td>
+                </tr>
+              </table>
+              <table class="otherlinks">
+                <tr>
+                  <td class="ind_links" id="vsco"><a href="exhibit.html">exhibit</a></td>
+                  <td class="slasher">/</td>
+                  <td class="ind_links" id="soundcloud"><a href="https://soundcloud.com/ceicafera" target="_blank">soundcloud</a></td>
+                  <td class="slasher">/</td>
+                  <td class="ind_links" id="instagram"><a href="https://www.instagram.com/ceicafera/" target="_blank">insta</a></td>
+                </tr>
+              </table>
+              <table class="otherlinks">
+                <tr>
+                  <td class="ind_links" id="rym"><a href="https://rateyourmusic.com/~ceicafera" target="_blank">rym</a></td>
+                  <td class="slasher">/</td>
+                  <td class="ind_links" id="aoty"><a href="https://www.albumoftheyear.org/user/ceicafera/" target="_blank">aoty</a></td>
+                  <td class="slasher">/</td>
+                  <td class="ind_links" id="letterboxd"><a href="https://letterboxd.com/ceicafera/" target="_blank">ltrboxd</a></td>
+                  <td class="slasher">/</td>
+                  <td class="ind_links" id="serializd"><a href="https://www.serializd.com/user/ceicafera/profile" target="_blank">serializd</a></td>
+                </tr>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="348ceff0-b5a7-4211-b212-cee275cdc4d6"></script>
+    
+  </body>
+  
+</html>

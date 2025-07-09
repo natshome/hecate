@@ -1,0 +1,377 @@
+@font-face {
+	font-family: carole-regular;
+	src: url(../../-assets/fonts/carole-serif/CaroleSerifVariable-Regular.ttf);
+}
+
+@font-face {
+	font-family: futura-heavy;
+	src: url(../../-assets/fonts/futura/futura_heavy.ttf);
+}
+
+@font-face {
+	font-family: montserrat-bold;
+	src: url(../../-assets/fonts/montserrat/montserrat_bold.otf);
+}
+
+@font-face {
+	font-family: outfit;
+	src: url(../../-assets/fonts/outfit.ttf);
+}
+
+::selection {
+	background-color: rgba(244,173,231,0.5);
+}
+
+html {
+	cursor: url("https://downloads.totallyfreecursors.com/cursor_files/sparklepink.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/sparklepink.gif"), auto;
+}
+
+a:hover, button {
+	cursor: url("https://downloads.totallyfreecursors.com/cursor_files/heart-ani-multi.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/heart-ani-multi.gif"), auto;
+}
+
+body {
+	background: url(../images/index/bgfr-now-xyz.jpg) #151515;
+	background-attachment: fixed;
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	color: white;
+	font-family: outfit;
+	font-weight: 475;
+	margin: 24px auto 0;
+	max-width: 1000px;
+	padding: 24px;
+	text-align: center;
+}
+
+h1 {
+	color: white;
+	font-family: outfit;
+	font-size: 2rem;
+	margin-top: 8px;
+	margin-bottom: 10px;
+}
+
+a {
+	color: pink;
+	text-decoration: underline;
+}
+
+a:hover {
+	opacity: 0.66;
+}
+
+.b {
+	font-weight: 650;
+}
+
+.c {
+	text-align: center !important;
+}
+
+.i {
+	font-style: italic;
+}
+
+.backhome {
+	color: pink;
+	font-family: outfit;
+	font-size: 0.95rem;
+	font-weight: 650;
+}
+
+.toolbar {
+	font-weight: 650;
+	margin-top: 0;
+	padding-top: 0;
+}
+
+.toolbar a {
+	text-decoration: none;
+}
+
+.toolbar .active {
+	color: gray;
+	font-weight: 450;
+}
+
+.toolbar .active:hover {
+	opacity: 1;
+}
+
+.pins, .clips {
+	background-color: black;
+	color: #faf6f3;
+	border: 1px dashed white;
+	box-shadow: 5px 5px rgba(175,175,175,0.3);
+	margin: 42px auto;
+	width: fit-content;
+	padding: 16px 32px;
+	max-width: 600px;
+}
+
+.pins p {
+	text-align: left;
+}
+
+.pins a {
+	color: steelblue;
+}
+
+.pins hr {
+	margin: 20px 0;
+}
+
+.pins form {
+	line-height: 2rem !important;
+	margin-bottom: -3px;
+	margin-top: -3px;
+	user-select: none;
+}
+
+.pins h2 {
+	font-size: 1.37rem;
+	margin-bottom: 11px;
+	padding-top: 4px;
+}
+
+.pins h2 a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.pins h2 a:hvoer {
+	opacity: 0.66;
+}
+
+.pins .into {
+	font-size: 0.9rem;
+}
+
+.pins .list {
+	background-color: #0d0d0d;
+	border: 1.75px dashed #666;
+	font-size: 0.9rem;
+	line-height: 1.6rem;
+	margin: 0 auto;
+	padding: 24px;
+	width: fit-content;
+}
+
+.pins .list .ll {
+	color: powderblue;
+	font-size: 1rem;
+}
+
+.pins .list ul {
+	margin: 0;
+}
+
+.pins .list li {
+	list-style-type: none;
+	text-align: left;
+	width: fit-content;
+}
+
+.pins .list ul li {
+	font-size: 0.9rem;
+	list-style-type: "×  " !important;
+}
+
+.pins .list a {
+	color: #eb99a1;
+	font-size: 1rem;
+	text-decoration: none;
+}
+
+.pins .list .listitemfirst {
+	font-size: 1.03rem;
+	text-decoration: underline;
+}
+
+.pins .therest {
+	font-family: outfit;
+	font-size: 0.95rem;
+	font-weight: 650;
+	margin-top: 16px;
+	text-align: center;
+}
+
+.pins .therest a {
+	color: #eb99a1;
+}
+
+.clips {
+	/* max-width: 100% !important;
+	width: 340px !important; */
+	padding-left: 75px;
+	padding-right: 75px;
+}
+
+.clips a {
+	color: powderblue;
+}
+
+.yr {
+	font-family: outfit;
+	font-size: 1.06rem;
+	font-weight: 650;
+	margin: 0 auto;
+	padding-bottom: 5px;
+	text-decoration: underline;
+	width: fit-content;
+}
+
+.them {
+	font-family: outfit;
+	font-weight: 575;
+	line-height: 1.37rem;
+	margin: 0 auto 16px;
+}
+
+.them .d {
+	font-size: 0.95rem;
+	text-align: right;
+}
+
+.them .t {
+	font-weight: 650;
+	text-align: left;
+}
+
+.pins h1 {
+	font-size: 2.12rem;
+	text-align: center;
+}
+
+.pins .timenplace {
+	font-size: 0.85rem;
+	font-weight: 650;
+	margin: -6px auto 24px;
+	padding: 0;
+	text-align: center;
+	width: fit-content;
+}
+
+.pins .text {
+	font-size: 0.9rem;
+	line-height: 1.31rem;
+}
+
+.pins .textlist {
+	font-size: 0.9rem;
+	margin-left: auto;
+	margin-right: auto;
+	width: fit-content;
+}
+
+.mag {
+	line-height: 1.106rem;
+}
+
+.cal {
+	font-family: outfit;
+	font-weight: 575;
+	line-height: 1.37rem;
+	margin: 0 auto 16px;
+}
+
+.cal {
+	table-layout: fixed;
+}
+
+.cal tbody tr td {
+	background-color: black;
+	border: 1px white solid;
+	font-size: 0.75rem;
+  	overflow: hidden;
+	/* padding: 1px 4.5px; */
+	text-align: center;
+	width: 21px !important;
+}
+
+.cal tbody tr .a {
+	background-color: mediumvioletred;
+}
+
+.cal tbody tr .b {
+	background-color: pink;
+}
+
+.cal tbody tr .c {
+	background-color: lightyellow;
+}
+
+.cal tbody tr .d {
+	background-color: lightgreen;
+}
+
+.cal tbody tr .e {
+	background-color: powderblue;
+}
+
+.cal tbody tr .f {
+	background-color: darkviolet;
+}
+
+.cal tbody tr .x {
+	background-color: #333;
+}
+
+.cal tbody tr span {
+	mix-blend-mode: difference;
+}
+
+.directions {
+	background-color: rgba(0,0,0,0.75);
+	border: 1px dashed #272727;
+	box-shadow: 5px 5px rgba(0,0,0,0.3);
+	font-size: 0.85rem;
+	margin: -21px auto 42px;
+	max-width: 600px;
+	padding: 20px 32px;
+	width: fit-content;
+}
+
+.directions div {
+	line-height: 0;
+}
+
+.directions table {
+	font-size: 0.9rem;
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.directions table tbody {
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.directions table tbody tr {
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+}
+
+.directions table tbody tr td {
+	line-height: 0;
+	margin: 0;
+	padding: 0;
+	width: 300px;
+}
+
+.directions table tbody tr .next {
+	text-align: left;
+}
+
+.directions table tbody tr .previous {
+	text-align: right;
+}
+
+.directions table tbody tr td a {
+	color: powderblue;
+}

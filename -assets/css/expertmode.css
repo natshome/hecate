@@ -1,0 +1,110 @@
+@font-face {
+	font-family: carole-regular;
+	src: url(../../-assets/fonts/carole-serif/CaroleSerifVariable-Regular.ttf);
+}
+
+@font-face {
+	font-family: futura-heavy;
+	src: url(../../-assets/fonts/futura/futura_heavy.ttf);
+}
+
+@font-face {
+	font-family: montserrat-bold;
+	src: url(../../-assets/fonts/montserrat/montserrat_bold.otf);
+}
+
+::selection {
+	background-color: rgba(244,173,231,0.5);
+}
+
+html {
+	cursor: url("https://downloads.totallyfreecursors.com/cursor_files/sparklepink.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/sparklepink.gif"), auto;
+}
+
+a:hover, button {
+	cursor: url("https://downloads.totallyfreecursors.com/cursor_files/heart-ani-multi.ani"), url("https://downloads.totallyfreecursors.com/thumbnails/heart-ani-multi.gif"), auto;
+}
+
+body {
+	background: #0c0805;
+	color: #ffffff;
+	padding: 24px;
+}
+
+.backhome {
+	font-family: carole-regular;
+	font-weight: 700;
+	text-shadow: 1.5px 1.5px rgba(12, 8, 5, 1);
+}
+
+h1 {
+	font-family: montserrat-bold;
+	font-size: 1.7rem;
+	text-shadow: 3px 3px rgba(12, 8, 5, 1);
+}
+
+table {
+	background-color: rgba(12, 8, 5, 0.8);
+	font-family: carole-regular;
+	padding: 12px 16px 8px 8px;
+}
+
+a {
+	color: #538fc1;
+	text-decoration: underline;
+}
+
+a:hover {
+	opacity: 0.66;
+}
+
+.expertdate {
+	padding-right: 3px;
+	text-align: right;
+}
+
+table a {
+	color: black;
+	text-decoration: underline;
+}
+
+.secondaryexpert {
+	font-size: 0.6rem;
+}
+
+.review a {
+	color: #9ebebe;
+}
+
+.comment a {
+	color: #118846;
+}
+
+.crumb a {
+	color: #6e96ff;
+}
+
+.video a {
+	color: #ff7676;
+}
+
+.music a {
+	color: #ff75f4;
+}
+
+.list a {
+	color: #738393;
+}
+
+.imgcollection {
+	margin: 24px;
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: -1;
+}
+
+.imgcollection img {
+	float: right;
+	margin-bottom: 24px;
+}

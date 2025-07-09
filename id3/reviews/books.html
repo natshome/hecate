@@ -1,0 +1,162 @@
+<html>
+
+  <head>
+    <title>book reviews – id:3</title>
+    <link rel="stylesheet" type="text/css" href="../../-assets/css/id3.css">
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <link rel="icon" href="../../-assets/images/id3/ico.png">
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+
+    <div class="buttonico">
+      <a href="../../id3.html"><img src="../../-assets/images/id3/ico.png" /></a>
+    </div>
+
+    <div class="mainheader">
+      <div class="menupiece">
+        <button onclick="menufunc()" class="dropbtn">––– menu</button>
+        <div id="dropdownmenu" class="dropdowncont">
+          <a href="../reviews.html">reviews</a>
+          <a href="../comments.html">comments</a>
+          <a href="../charts.html">charts</a>
+          <button onclick="menufuncclose()" class="dropbtnalt">[ close ]</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="imgheadersmaller">
+      <a href="../../id3.html"><img src="../../-assets/images/id3/imgheader-new.jpg" /></a>
+    </div>
+
+    <div class="foliage"><img src="../../-assets/images/id3/dee.jpg" /></div>
+
+    <!-- make a menu bar for articles, recents, etc. -->
+
+    <div class="mainbacklogpiece">
+      
+      <div class="mbpheader"><a href="../reviews.html">reviews</a></div>
+      <div class="bmenubar">
+        <div class="bmbsegmenta"><a href="../reviews.html">all</a></div>
+        <div class="bmbsegment"><a href="books.html">books</a></div>
+        <div class="bmbsegmenta"><a href="games.html">games</a></div>
+        <div class="bmbsegmenta"><a href="movies.html">movies</a></div>
+        <div class="bmbsegmenta"><a href="music.html">music</a></div>
+        <div class="bmbsegmenta"><a href="singles.html">singles</a></div>
+      </div>
+
+      <div class="sortoption"><span class="soactive"><a href="books.html">sort by date published</a></span> &nbsp; / &nbsp; <span class="sopassive"><a href="books-by-author.html">by author</a></span></div>
+
+      <div class="reviewlineprior">
+          
+        <div class="rgelement"><a href="2025/05/27/females.html">
+          <div class="rgedate">27 may 2025</div>
+          <img src="2025/05/27/img.jpg" />
+          <div class="rgetitle">Females</div>
+          <div class="rgeartist">Andrea Long Chu</div>
+        </a></div>
+          
+        <div class="rgelement"><a href="2025/03/25/tao-te-ching.html">
+          <div class="rgedate">25 mar 2025</div>
+          <img src="2025/03/25/img.jpg" />
+          <div class="rgetitle">Tao Te Ching</div>
+          <div class="rgeartist">Lao Tzu</div>
+        </a></div>
+
+        <div class="rgelement"><a href="2025/02/13/the-utopia-of-rules.html">
+          <div class="rgedate">13 feb 2025</div>
+          <img src="2025/02/13/img.jpg" />
+          <div class="rgetitle">The Utopia of Rules</div>
+          <div class="rgeartist">David Graeber</div>
+        </a></div>
+
+      </div>
+
+      <div class="bmenubar"></div>
+
+      <div class="reviewline">
+
+        <details class="mbpdetails"> <!-- mmxxv -->
+          
+          <summary>× &nbsp; mmxxv — 1 review &nbsp; ×</summary>
+
+          <div class="rgelement"><a href="2025/01/10/stung-with-love.html">
+            <div class="rgedate">10 jan 2025</div>
+            <img src="2025/01/10/img.jpg" />
+            <div class="rgetitle">Stung with Love</div>
+            <div class="rgeartist">Sappho</div>
+          </a></div>
+
+        </details>
+
+        <details class="mbpdetails"> <!-- mmxxiv -->
+          
+          <summary>× &nbsp; mmxxiv — 4 reviews &nbsp; ×</summary>
+          
+          <div class="rgelement"><a href="2024/12/08/no-longer-human.html">
+            <div class="rgedate">8 dec 2024</div>
+            <img src="2024/12/08/img.jpg" />
+            <div class="rgetitle">No Longer Human</div>
+            <div class="rgeartist">Osamu Dazai</div>
+          </a></div>
+
+          <div class="rgelement"><a href="2024/09/24/a-tree-grows-in-brooklyn.html">
+            <div class="rgedate">24 sep 2024</div>
+            <img src="2024/09/24/img.jpg" />
+            <div class="rgetitle">A Tree Grows in Brooklyn</div>
+            <div class="rgeartist">Betty Smith</div>
+          </a></div>
+
+          <div class="rgelement" id="highrating"><a href="2024/06/22/nevada.html">
+            <div class="rgedate">22 jun 2024</div>
+            <img src="2024/06/22/img.jpg" />
+            <div class="rgetitle">Nevada</div>
+            <div class="rgeartist">Imogen Binnie</div>
+          </a></div>
+
+          <div class="rgelement" id="highrating"><a href="2024/05/24/cold-nights-of-childhood.html">
+            <div class="rgedate">24 may 2024</div>
+            <img src="2024/05/24/img.jpg" />
+            <div class="rgetitle">Cold Nights of Childhood</div>
+            <div class="rgeartist">Tezer Özlü</div>
+          </a></div>
+
+        </details>
+
+      </div>
+
+    </div>
+
+    <div class="foliage"><img src="../../-assets/images/id3/dee.jpg" /></div>
+
+    <div class="blackplanebox">
+      <div>✧ created by hand, by&nbsp;<a href="../../index.html">natalie</a> ✧</div>
+      <div class="copyrightmarker">
+        <p><span class="foot"><span class="copybadge">(c)</span> <span class="year">MMXXV</span>, all rights reserved.</span></p>
+      </div>
+    </div>
+
+    <script>
+      function openNav() {
+        document.getElementById("mainmenu").style.display = "block";
+      }
+      function closeNav() {
+        document.getElementById("mainmenu").style.display = "none";
+      }
+    </script>
+
+    <script>
+      function menufunc() {
+        document.getElementById("dropdownmenu").style.display = "block";
+      }
+      function menufuncclose() {
+        document.getElementById("dropdownmenu").style.display = "none";
+      }
+    </script>
+    
+    <script defer src="https://cloud.umami.is/script.js" data-website-id="348ceff0-b5a7-4211-b212-cee275cdc4d6"></script>
+
+  </body>
+
+</html>
