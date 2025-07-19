@@ -1,3 +1,6 @@
 # ignore all ds_store files
 *.DS_Store
 
+# ignore all dotfiles except for this one
+.*
+!.gitignore
